@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>Quiz Score</title>
+</head>
+<body>
+    <div id="score" class="container">
+        <h1>Quiz Score</h1>
+        <p>Your score: <span id="scoreValue"></span></p>
+    </div>
+
+    <script>
+        // Retrieve score from URL query parameter
+        const urlParams = new URLSearchParams(window.location.search);
+        const score = urlParams.get('score');
+
+        // Display score on the page
+        document.getElementById('scoreValue').textContent = score;
+    </script>
+<h1>Quiz Answers</h1>
+<ul class="container">
+    <li>
+        <strong>Question 1:</strong> A) HTML stands for Hyper Text Markup Language.
+    </li>
+    <li>
+        <strong>Question 2:</strong> A) &ltstyle&gt
+    </li>
+    <li>
+        <strong>Question 3:</strong> A) &ltvideo&gt
+    </li>
+    <li>
+        <strong>Question 4:</strong> B) css
+    <li>
+        <strong>Question 5:</strong> C) background-color
+    <li>
+        <strong>Question 6:</strong> A) Hides an element without removing the space it occupies
+    </li>
+    <li>
+        <strong>Question 7:</strong> A) #demo
+    <li>
+        <strong>Question 8:</strong> A) anchor
+    </li>
+    <li>
+        <strong>Question 9:</strong> B) &lttr&gt
+    <li>
+        <strong>Question 10:</strong> A)  font-size
+    </li>
+</ul>
+<div class="container">    
+    <p>
+            <ul>
+                <li> Return to the article: <a href="article.html"> <img src="https://cdn.iconscout.com/icon/free/png-256/free-article-1767419-1505279.png" alt = "artcile" height="20px" >Article on Web Technology</a></li>
+                <li> Return to the quiz:<a href="quiz.html"> <img src="https://w7.pngwing.com/pngs/541/436/png-transparent-human-brain-logo-upper-cdr-leaf-people-thumbnail.png" alt = "quiz" height="20px" > Quiz on Web Technology</a></li>
+                <li>Return to About me page:<a href="index.html">About Me</li>
+            </ul>
+            </p>
+    </div>
+
+</body>
+</html>
